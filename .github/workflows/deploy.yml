@@ -28,8 +28,8 @@ jobs:
         run: npm install
 
       - name: Publish
-        uses: cloudflare/wrangler-action@1.2.0
+        uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-        env:
-          CF_ACCOUNT_ID: ${{secrets.CF_ACCOUNT_ID}}
+        #env:
+        #  CF_ACCOUNT_ID: ${{secrets.CF_ACCOUNT_ID}}
