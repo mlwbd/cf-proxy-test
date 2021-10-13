@@ -27,9 +27,12 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build script
-        run: npm run build
-      - name: cat script
-        run: cat dist/*.js
+        run: |
+          npm run build
+          printf "\n\n"
+          cat dist/*.js
+          printf "\n\n"
+          rm -rf dist
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
