@@ -4,8 +4,11 @@ addEventListener('fetch', (event) => {
   const proxy = useProxy();
   proxy.use('/', {
     upstream: {
-      domain: 'trac.ffmpeg.org/wiki',
+      domain: 'trac.ffmpeg.org',
       protocol: 'https',
+    },
+    cors: {
+      origin: '*',
     },
   });
 
