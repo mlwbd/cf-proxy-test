@@ -1,6 +1,7 @@
 name = 'template'
 type = 'webpack'
 account_id = '1fba8691d45f3422a3e3a44d1b1e4dab'
+route = 'testcdn.phantomzone.workers.dev'
 usage_model = ''
 workers_dev = true
 
