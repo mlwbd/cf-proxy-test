@@ -1,8 +1,6 @@
 name = 'template'
 type = 'webpack'
-account_id = ''
-route = ''
-zone_id = ''
+account_id = '1fba8691d45f3422a3e3a44d1b1e4dab'
 usage_model = ''
 workers_dev = true
 
