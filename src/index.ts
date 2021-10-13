@@ -4,11 +4,11 @@ addEventListener('fetch', (event) => {
   const proxy = useProxy();
   proxy.use('/', {
     upstream: {
-      domain: 'trac.ffmpeg.org',
+      domain: 'bemiraculous.me',
       protocol: 'https',
     },
     cors: {
-      origin: '*',
+      origin: true,
     },
   });
 
